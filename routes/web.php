@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'PaginaController@exibirFormulario');
+Route::post('/', 'PaginaController@exibirFormularioComDados');

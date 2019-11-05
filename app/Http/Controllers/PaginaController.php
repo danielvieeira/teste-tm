@@ -10,4 +10,12 @@ class PaginaController extends Controller
     {
         return view('Formulario');
     }
+
+    public function exibirFormularioComDados(Request $request)
+    {
+        // Recupera os dados passados no post
+        $dados = $request->only('nome', 'texto');
+
+        return view('Formulario')->with('dados', $dados);
+    }
 }

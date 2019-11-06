@@ -14,13 +14,31 @@
                     <h4 class="card-title">Formulário de submissão</h4>
                     <form action="/" method="POST" class="col-sm-12">
                         @csrf
+                        @if ($errors->any())
+                            @foreach ($errors->all() as $error)
+                                <div class="alert alert-danger"><?= $error ?></div>
+                            @endforeach
+                        @endif
                         <div class="form-group">
                             <label for="nome">Nome Completo:</label>
-                            <input name="nome" type="text" class="form-control" id="nome" placeholder="Ex: João da Silva">
+                            <input 
+                                name="nome"
+                                type="text"
+                                class="form-control"
+                                id="nome"
+                                placeholder="Ex: João da Silva"
+                                value="<?= (empty($input['nome'])) ? '' : $input['nome'] ?>"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="texto">Texto:</label>
-                            <textarea name="texto" rows="4" class="form-control" id="texto" placeholder="Ex: A resposta para a vida, o universo e tudo mais."></textarea>
+                            <textarea
+                                name="texto"
+                                rows="4"
+                                class="form-control"
+                                id="texto"
+                                placeholder="Ex: A resposta para a vida, o universo e tudo mais."
+                            ><?= (empty($input['texto'])) ? '' : $input['texto'] ?></textarea>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">Submeter</button>

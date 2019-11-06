@@ -8,7 +8,17 @@
         <title>Teste</title>
     </head>
     <body>
-        <div class="container col-sm-11 col-md-8 col-lg-5">
+        <div class="col-sm-12 mb-3">
+            <div class="row justify-content-center no-glutters">
+                <div class="col-11 col-sm11 col-md-10 col-lg-8">
+                    <a href="#">
+                        <img src="<?= asset('img/banner.jpg') ?>" alt="Banner genérico" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container col-11 col-sm-11 col-md-8 col-lg-5">
             <div class="card justify-content-center">
                 <div class="card-body">
                     <h4 class="card-title">Formulário de submissão</h4>

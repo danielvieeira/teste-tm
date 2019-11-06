@@ -28,12 +28,7 @@ APP_ENV=production
 APP_DEBUG=false
 ```
 
-4 - Gere uma chave de criptografia da aplicação usando o comando:
-```shell
-php artisan key:generate
-```
-
-5 - Incie um servidor usando um dos comandos a seguir:
+4 - Incie um servidor usando um dos comandos a seguir:
 ```shell
 php artisan serve
 ```
@@ -42,4 +37,4 @@ ou
 php -S 127.0.0.1:8000 -t ./public
 ```
 
-6 - Acesse os sistema pela url <a href="127.0.0.1:8000">127.0.0.1:8000</a> ou <a href="localhost:8000">localhost:8000</a>
+5 - Acesse os sistema pela url <a href="127.0.0.1:8000">127.0.0.1:8000</a> ou <a href="localhost:8000">localhost:8000</a>

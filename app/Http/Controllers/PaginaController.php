@@ -16,6 +16,10 @@ class PaginaController extends Controller
         // Recupera os dados passados no post
         $dados = $request->only('nome', 'texto');
 
+        if (str_word_count($dados['nome']) < 2) {
+            return view('Formulario')->with('input', $dados)->withErrors('Nome incompleto');
+        }
+
         return view('Formulario')->with('dados', $dados);
     }
 }

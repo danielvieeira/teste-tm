@@ -14,7 +14,7 @@
 
 1 - Instale as dependências utilizando o composer:
 ```shell
-php composer.phar install --optmize-autoload --no-dev
+php composer.phar install --no-dev
 ```
 
 2 - Crie uma cópia do arquivo .env.example e renomeie-a como .env:

@@ -37,4 +37,4 @@ ou
 php -S 127.0.0.1:8000 -t ./public
 ```
 
-5 - Acesse os sistema pela url <a href="127.0.0.1:8000">127.0.0.1:8000</a> ou <a href="localhost:8000">localhost:8000</a>
+5 - Acesse o site pela url <a href="127.0.0.1:8000">127.0.0.1:8000</a> ou <a href="localhost:8000">localhost:8000</a>
